@@ -2,7 +2,7 @@ FROM node:10
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY ./backend .
 
 RUN npm install pm2 -g && yarn install --pure-lockfile --production
 

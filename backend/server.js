@@ -1,12 +1,10 @@
 const express = require("express");
-const attendees = require("./attendees.json");
 const cors = require("cors");
 process.env.PORT = process.env.PORT || 5555;
 
 const app = express();
 app.use(cors());
 
-app.get("/attendees", (_, res) => res.json(attendees));
 app.all("*", (req, res) => {
   res.status(404).send("Not found");
 });
