@@ -9,6 +9,9 @@ const styles = {
     objectFit: "cover",
     padding: "2px"
   },
+  item: {
+    padding: "2px"
+  },
   name: {
     display: "block"
   }
@@ -20,7 +23,9 @@ const Events = () => {
   useEffect(() => {
     (async function() {
       try {
-        const response = await fetch("http://localhost/attendees/");
+        const response = await fetch(
+          "https://pres.dokku.kleyson.dev/attendees/"
+        );
 
         setState(await response.json());
       } catch (e) {}
@@ -29,13 +34,20 @@ const Events = () => {
 
   const generateImage = a => {
     return (
-      <img
-        src={a.photo}
-        style={styles.photo}
-        alt={a.name}
+      <a
+        href={`https://secure.meetupstatic.com/photos/member/${a.photo}`}
+        style={styles.item}
         key={a.id}
-        onClick={() => alert(a.name)}
-      />
+      >
+        {a.name}
+      </a>
+      // <img
+      //   src={`https://secure.meetupstatic.com/photos/member/${a.photo}`}
+      //   style={styles.photo}
+      //   alt={a.name}
+      //   key={a.id}
+      //   onClick={() => alert(a.name)}
+      // />
     );
   };
 
