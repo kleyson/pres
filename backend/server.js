@@ -1,7 +1,7 @@
 const express = require("express");
 const attendees = require("./attendees.json");
 const cors = require("cors");
-process.env.PORT = process.env.PORT || 80;
+process.env.PORT = process.env.PORT || 5555;
 
 const app = express();
 app.use(cors());

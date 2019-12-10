@@ -6,6 +6,6 @@ COPY . .
 
 RUN npm install pm2 -g && yarn install --pure-lockfile --production
 
-EXPOSE 80
+EXPOSE 5555
 
 CMD [ "pm2-runtime", "ecosystem.config.json" ]
