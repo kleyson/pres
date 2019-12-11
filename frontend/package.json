@@ -5,7 +5,7 @@
   "homepage": "http://kleyson.github.io/pres",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build ../out",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"./src/**/*.js*\" --cache"
