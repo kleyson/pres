@@ -2,6 +2,7 @@
   "name": "winnipeg-js",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://kleyson.github.io/pres",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -42,26 +43,6 @@
       "browser": true,
       "node": true,
       "jest": true
-    },
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "printWidth": 80,
-          "singleQuote": false,
-          "trailingComma": "all",
-          "bracketSpacing": true,
-          "arrowParens": "always"
-        }
-      ],
-      "react/prop-types": 0,
-      "no-unused-vars": [
-        "error",
-        {
-          "argsIgnorePattern": "props",
-          "varsIgnorePattern": "props"
-        }
-      ]
     }
   }
 }

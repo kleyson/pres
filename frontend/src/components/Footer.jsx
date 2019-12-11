@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
 const Footer = () => {
   return (
@@ -9,23 +9,23 @@ const Footer = () => {
           <div>
             <a href="http://www.linkedin.com/groups/Winnipegjs-4520628?home=&gid=4520628&trk=anet_ug_hm&goback=%2Egmp_4520628">
               <img
-                src="/images/linkedin-icon.png"
+                src="./images/linkedin-icon.png"
                 alt="Join us on Linkedin"
                 title="Join us on Linkedin"
               />
             </a>
             <span>
-              Join our{' '}
+              Join our{" "}
               <a href="http://www.linkedin.com/groups/Winnipegjs-4520628?home=&gid=4520628&trk=anet_ug_hm&goback=%2Egmp_4520628">
                 Group
-              </a>{' '}
+              </a>{" "}
               on Linkedin
             </span>
           </div>
           <div>
             <a href="http://twitter.com/winnipegjs">
               <img
-                src="/images/twitter-icon.png"
+                src="./images/twitter-icon.png"
                 alt="Follow us on Twitter"
                 title="Follow us on Twitter"
               />
@@ -38,13 +38,13 @@ const Footer = () => {
           <div>
             <a href="http://github.com/yagudaev/winnipegjs">
               <img
-                src="/images/github-icon.png"
+                src="./images/github-icon.png"
                 alt="Contribute on Github"
                 title="contribute on Github"
               />
             </a>
             <span>
-              Contribute on{' '}
+              Contribute on{" "}
               <a href="http://github.com/yagudaev/winnipegjs">Github</a>
             </span>
           </div>
@@ -66,11 +66,6 @@ const Footer = () => {
             Designed by
             <a href="http://www.vadimbrodsky.com">Vadim Brodsky</a>
           </div>
-        </div>
-        <div className="transfer_link">
-          <a href="/set_desktop?to=true&amp;page=#&amp;title=#Winnipeg.js">
-            Desktop Version
-          </a>
         </div>
       </footer>
     </Fragment>
